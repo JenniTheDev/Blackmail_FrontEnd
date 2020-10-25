@@ -1,0 +1,23 @@
+﻿@inherits Blackmail.Layouts.FrontPageLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using Blackmail.Models.BlackmailDb
+@using Microsoft.AspNetCore.Identity;
+@using Blackmail.Models
+@inject Microsoft.Extensions.Localization.IStringLocalizer<FrontPageLayout> L
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
+
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenSidebarToggle style="display: flex">
+    </RadzenSidebarToggle>
+    <RadzenHeader style="height: 121px; text-align: left; width: 1134px">
+    </RadzenHeader>
+    <RadzenBody @ref="body1" style="height: 641px; vertical-align: middle">
+    </RadzenBody>
+  </ChildContent>
+</RadzenBody>

@@ -1,0 +1,32 @@
+﻿@page "/unauthorized"
+@layout MainLayout
+@inherits Blackmail.Pages.UnauthorizedComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using Blackmail.Models.BlackmailDb
+@using Microsoft.AspNetCore.Identity;
+@using Blackmail.Models
+@using Microsoft.AspNetCore.Authorization
+
+
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Unauthorized> L
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenHeading Size="H1" style="position: relative; text-align: center" Text="Unauthorized">
+    </RadzenHeading>
+    <div style="text-align: center" class="row">
+      <div class="col-md-12" style="text-align: center">
+        <RadzenHtml >
+          You are not authorized to see this page. Login to proceed.
+        </RadzenHtml>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="text-align: center">
+      <div class="col-md-12 justify-content-center align-items-center d-flex" style="display: flex; text-align: center">
+        <RadzenButton ButtonStyle="ButtonStyle.Info" Size="ButtonSize.Medium" style="display: flex; position: relative; text-align: center; vertical-align: top; width: 110px" Text="Login" Click="@LoginButtonClick">
+        </RadzenButton>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>
