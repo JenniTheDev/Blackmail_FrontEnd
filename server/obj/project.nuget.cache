@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Uvfsmn3IhBF7o5CTzsazgvL6H5SfZ5aMpDyVaQSECwapDToILDJSOmJqFJdh/4wLaIqNvpncQQiBOAFX8MmUoA==",
+  "dgSpecHash": "YsBk/eP+oTbajlPQ1tccgBImQf6oXPGBkcfMEanOk5q0d4J6P/EsdzN8Vq0wZO20yi7yECTNiEXSpu52dEZdpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jenni\\Documents\\FrontEndWeb\\Blackmail_FrontEnd\\server\\Blackmail.Server.csproj",
   "expectedPackageFiles": [
@@ -82,7 +82,7 @@
     "C:\\Users\\jenni\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.0.0\\pomelo.entityframeworkcore.mysql.3.0.0.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\pomelo.jsonobject\\2.2.0\\pomelo.jsonobject.2.2.0.nupkg.sha512",
-    "C:\\Users\\jenni\\.nuget\\packages\\radzen.blazor\\2.15.17\\radzen.blazor.2.15.17.nupkg.sha512",
+    "C:\\Users\\jenni\\.nuget\\packages\\radzen.blazor\\2.15.18\\radzen.blazor.2.15.18.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

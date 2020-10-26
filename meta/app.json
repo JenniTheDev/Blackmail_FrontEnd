@@ -20,7 +20,8 @@
     "Add Application Role",
     "Add Application User",
     "Register Application User",
-    "Login2"
+    "Login2",
+    "Home"
   ],
   "pages": [
     "Data",

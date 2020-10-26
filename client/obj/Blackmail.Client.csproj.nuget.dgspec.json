@@ -70,7 +70,7 @@
             },
             "Radzen.Blazor": {
               "target": "Package",
-              "version": "[2.15.17, )"
+              "version": "[2.15.18, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

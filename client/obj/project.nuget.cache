@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aY+ikyAkXq+yDllWSCgwJiAOk6VC42Nyhwem7tJajhPSNQbQqL1102hZ81yiH82vAlbnt2wn/tnsRTFlD3aKdg==",
+  "dgSpecHash": "hDn1ob+ybYn8ev0OnRRVcYf9cBIxvn9W3sCq/Z3NMn8MPdSKl8UoqjzfdSJfaMVdlkxwp6EYZ9loLK9Mmyyppg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jenni\\Documents\\FrontEndWeb\\Blackmail_FrontEnd\\client\\Blackmail.Client.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,7 @@
     "C:\\Users\\jenni\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0\\microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\jenni\\.nuget\\packages\\radzen.blazor\\2.15.17\\radzen.blazor.2.15.17.nupkg.sha512",
+    "C:\\Users\\jenni\\.nuget\\packages\\radzen.blazor\\2.15.18\\radzen.blazor.2.15.18.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\jenni\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",

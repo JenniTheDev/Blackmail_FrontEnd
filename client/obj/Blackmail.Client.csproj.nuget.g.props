@@ -16,7 +16,7 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)radzen.blazor\2.15.17\buildTransitive\Radzen.Blazor.props" Condition="Exists('$(NuGetPackageRoot)radzen.blazor\2.15.17\buildTransitive\Radzen.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)radzen.blazor\2.15.18\buildTransitive\Radzen.Blazor.props" Condition="Exists('$(NuGetPackageRoot)radzen.blazor\2.15.18\buildTransitive\Radzen.Blazor.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.runtime\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Runtime.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.runtime\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Runtime.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.build\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Build.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.build\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Build.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\3.2.0\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\3.2.0\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props')" />

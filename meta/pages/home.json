@@ -33,6 +33,69 @@
             "textAlign": "center"
           },
           "type": "row"
+        },
+        {
+          "class": "justify-content-center",
+          "components": [
+            {
+              "class": "col-md-12  d-flex justify-content-around",
+              "components": [
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "path": "edit-datum",
+                        "type": "navigate"
+                      }
+                    ]
+                  },
+                  "name": "image2",
+                  "path": "https://i.imgur.com/qNas47U.png",
+                  "style": {
+                    "display": "flex",
+                    "height": "41.296875px",
+                    "position": "relative",
+                    "textAlign": "left",
+                    "verticalAlign": "middle",
+                    "width": "340px"
+                  },
+                  "type": "image"
+                },
+                {
+                  "attributes": [],
+                  "events": {
+                    "click": [
+                      {
+                        "path": "add-datum",
+                        "type": "navigate"
+                      }
+                    ]
+                  },
+                  "name": "image1",
+                  "path": "https://i.imgur.com/Rue8hta.png",
+                  "style": {
+                    "display": "flex",
+                    "height": "38.21875px",
+                    "position": "relative",
+                    "textAlign": "right",
+                    "width": "346px"
+                  },
+                  "type": "image"
+                }
+              ],
+              "name": "col1",
+              "style": {
+                "position": "relative",
+                "textAlign": "center"
+              },
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "style": {
+            "height": "71px"
+          },
+          "type": "row"
         }
       ],
       "container": "main",

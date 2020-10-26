@@ -296,7 +296,6 @@ C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstan
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\v4LhihP26fP-dVajppSCZIrCVbkiALCJgAisyG2cmJQ=.hash
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\e0FY4g2Vt8TsXfafkXU2XnUgcYzjzPiFqb3KCylDb74=.hash
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\rrngdmRQAMVwDKsmx5JvRKwjInEGA0wfWpTq6e1WiWs=.hash
-C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\FJzPkozsS_a3FY3Ct6YoKlB1UHrQw-_0sE8uZWTtBMk=.hash
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\oeXdNP1uzF9KZm0JpacVa7owHnjSqvaEeNHajluA_rQ=.hash
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\yTznKFXYjwtGYUGUdxYEw8gA1A_IWlMYOncOmAAyJas=.hash
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\4A297N6Xf0UZNMTrY_4COe43Hmcrtxb-eTiqTJ5M6wA=.hash
@@ -465,6 +464,9 @@ C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstan
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\Blackmail.Client.pdb
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Home.razor.g.cs
 C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\Razor\Pages\Home.razor.g.cs
-C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\keTnkTQQQg-nY43zaDuYWzBkoKufduB9QfYvR--yI1U=.hash
-C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\TY2qpmDRtX0QYvcxKgci5bBJGBmIKR-gSIj968NNftQ=.hash
-C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\Qf3uzx81u-GGU9s4FRyWVMWdkHicT_K82dKYQkRgr8A=.hash
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Login2.razor.g.cs
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\Razor\Pages\Login2.razor.g.cs
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\JdqkhLAubmS_P2MMXbIp4boq4qANXABvZBgpvtjomPM=.hash
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\Iws-Jv5P69XrZsYuXFqEq3DNNUMNczq-oGS8SXfbsBs=.hash
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\LOtuBcoswmsdqJ8_MKG8nmxb7K3GJdXKOmJsyQTk0tc=.hash
+C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\obj\Debug\netstandard2.1\integrity\qP_vDIDFZG9C-l6JVrkWZOubg3r8AnSW83noZ6mCSfU=.hash
