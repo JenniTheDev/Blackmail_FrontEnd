@@ -15,8 +15,12 @@
   "name": "Blackmail",
   "navigation": [
     "Data",
-    "Home",
-    "Login"
+    "Add Datum",
+    "Login",
+    "Add Application Role",
+    "Add Application User",
+    "Register Application User",
+    "Login2"
   ],
   "pages": [
     "Data",
@@ -31,7 +35,8 @@
     "Edit Application User",
     "Profile",
     "Unauthorized",
-    "Home"
+    "Home",
+    "Login2"
   ],
   "port": 8000,
   "security": {

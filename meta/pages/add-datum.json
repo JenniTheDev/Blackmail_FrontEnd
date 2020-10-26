@@ -304,6 +304,7 @@
   "name": "Add Datum",
   "layout": "Main",
   "access": [
-    "Authenticated"
+    "Authenticated",
+    "admin"
   ]
 }
