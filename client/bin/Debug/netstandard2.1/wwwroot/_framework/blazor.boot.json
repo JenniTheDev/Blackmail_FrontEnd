@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Blackmail.Client.dll": "sha256-RIQLGckNgAnnLzahXfXh1BDzxUJZg5CorXNL1HqKQ4Y=",
+      "Blackmail.Client.dll": "sha256-keTnkTQQQg\/nY43zaDuYWzBkoKufduB9QfYvR\/\/yI1U=",
       "Microsoft.CSharp.dll": "sha256-ubyINHXDmWOAugBDEb8CCz+uV68eordXiYDxpUeRBvg=",
       "System.Core.dll": "sha256-Zw2\/5aDWjgMedporhjigwhi\/UCLcfl0tfa0LXUyD9HE=",
       "System.dll": "sha256-r6QdEXq0KfB8oZDzhnV4xskSbzJA0yBVi6XFpa3TGHM=",
@@ -73,7 +73,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "Blackmail.Client.pdb": "sha256-TfgOAXV8adYrrbXj7BSl6ZaYMs2vt\/Smyi05u91D\/pU=",
+      "Blackmail.Client.pdb": "sha256-TY2qpmDRtX0QYvcxKgci5bBJGBmIKR\/gSIj968NNftQ=",
       "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA="
     },
     "runtime": {

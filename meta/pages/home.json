@@ -6,14 +6,33 @@
     {
       "components": [
         {
-          "name": "pageTitle",
-          "size": "H1",
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "name": "image0",
+                  "path": "https://i.imgur.com/WhWoRso.png",
+                  "style": {
+                    "textAlign": "center",
+                    "width": "618px"
+                  },
+                  "type": "image"
+                }
+              ],
+              "name": "col0",
+              "style": {
+                "textAlign": "center"
+              },
+              "type": "col"
+            }
+          ],
+          "name": "row0",
           "style": {
-            "position": "relative",
+            "height": "118px",
             "textAlign": "center"
           },
-          "text": "Blackmail",
-          "type": "heading"
+          "type": "row"
         }
       ],
       "container": "main",
