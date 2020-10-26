@@ -1,0 +1,199 @@
+{
+  "info": {
+    "title": "blackmailazure",
+    "x-type": "odata",
+    "x-connector": "mysql"
+  },
+  "definitions": {
+    "Datum": {
+      "x-table": "def.data",
+      "resource": "Data",
+      "required": [
+        "UserID"
+      ],
+      "properties": {
+        "UserID": {
+          "x-key": true,
+          "x-nullable": false,
+          "type": "integer"
+        },
+        "Blackmailer": {
+          "type": "string",
+          "length": 45
+        },
+        "Blackmailee": {
+          "type": "string",
+          "length": 45
+        },
+        "cost": {
+          "type": "number",
+          "format": "double"
+        },
+        "img": {
+          "type": "string",
+          "length": 45
+        }
+      }
+    }
+  },
+  "paths": {
+    "/Data": {
+      "get": {
+        "operationId": "getData",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$filter",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$orderby",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$expand",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "$skip",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "$count",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "$format",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "properties": {
+                "value": {
+                  "items": {
+                    "$ref": "#/definitions/Datum"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "default": {
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "createDatum",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Datum",
+            "schema": {
+              "$ref": "#/definitions/Datum"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "schema": {
+              "$ref": "#/definitions/Datum"
+            }
+          },
+          "default": {
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/Data({UserID})": {
+      "delete": {
+        "operationId": "deleteDatum",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserID",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "204": {},
+          "default": {
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "getDatumByUserID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserID",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Datum"
+            }
+          },
+          "default": {
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "operationId": "updateDatum",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserID",
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "Datum",
+            "schema": {
+              "$ref": "#/definitions/Datum"
+            }
+          }
+        ],
+        "responses": {
+          "204": {},
+          "default": {
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "basePath": "/odata/blackmailazure",
+  "host": "localhost:5001",
+  "schemes": [
+    "https"
+  ]
+}

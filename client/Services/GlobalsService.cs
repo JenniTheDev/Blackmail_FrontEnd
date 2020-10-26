@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using Blackmail.Models;
-using Blackmail.Models.AzureBlackmail;
+using Blackmail.Models.Blackmailazure;
 using Radzen;
 
 namespace Blackmail

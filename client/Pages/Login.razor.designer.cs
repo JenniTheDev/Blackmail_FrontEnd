@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
-using Blackmail.Models.AzureBlackmail;
+using Blackmail.Models.Blackmailazure;
 using Microsoft.AspNetCore.Identity;
 using Blackmail.Models;
 using Blackmail.Client.Pages;
@@ -51,7 +51,7 @@ namespace Blackmail.Pages
 
 
         [Inject]
-        protected AzureBlackmailService AzureBlackmail { get; set; }
+        protected BlackmailazureService Blackmailazure { get; set; }
 
         protected override async System.Threading.Tasks.Task OnInitializedAsync()
         {

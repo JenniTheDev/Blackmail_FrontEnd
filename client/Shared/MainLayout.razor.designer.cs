@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
-using Blackmail.Models.AzureBlackmail;
+using Blackmail.Models.Blackmailazure;
 using Microsoft.AspNetCore.Identity;
 using Blackmail.Models;
 
@@ -33,7 +33,7 @@ namespace Blackmail.Layouts
         protected SecurityService Security { get; set; }
 
         [Inject]
-        protected AzureBlackmailService AzureBlackmail { get; set; }
+        protected BlackmailazureService Blackmailazure { get; set; }
 
         protected RadzenBody body0;
         protected RadzenSidebar sidebar0;

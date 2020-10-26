@@ -2,7 +2,7 @@
 
 @using Radzen
 @using Radzen.Blazor
-@using Blackmail.Models.AzureBlackmail
+@using Blackmail.Models.Blackmailazure
 @using Microsoft.AspNetCore.Identity;
 @using Blackmail.Models
 <RadzenDialog />
@@ -24,7 +24,7 @@
           <ChildContent>
             <RadzenProfileMenuItem Path="profile" Icon="settings" Text="Profile" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
             </RadzenProfileMenuItem>
-            <RadzenProfileMenuItem Path="application-users" Icon="person" Text="Users" Visible="@Security.IsInRole(new string[]{"Everybody"})">
+            <RadzenProfileMenuItem Path="application-users" Icon="person" Text="Users" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
             </RadzenProfileMenuItem>
             <RadzenProfileMenuItem Path="application-roles" Icon="security" Text="Roles" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
             </RadzenProfileMenuItem>
@@ -51,15 +51,7 @@
   <ChildContent>
     <RadzenPanelMenu style="height: 100%">
       <ChildContent>
-        <RadzenPanelMenuItem Text="Login" Path="login" Visible="@Security.IsInRole(new string[]{"Everybody"})">
-        </RadzenPanelMenuItem>
-        <RadzenPanelMenuItem Text="Add Application Role" Path="add-application-role" Visible="@Security.IsInRole(new string[]{"Everybody"})">
-        </RadzenPanelMenuItem>
-        <RadzenPanelMenuItem Text="Add Application User" Path="add-application-user" Visible="@Security.IsInRole(new string[]{"Everybody"})">
-        </RadzenPanelMenuItem>
-        <RadzenPanelMenuItem Text="Devicecodes" Path="devicecodes" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
-        </RadzenPanelMenuItem>
-        <RadzenPanelMenuItem Text="Home" Path="home" Visible="@Security.IsInRole(new string[]{"Everybody"})">
+        <RadzenPanelMenuItem Text="Data" Path="data" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
         </RadzenPanelMenuItem>
       </ChildContent>
     </RadzenPanelMenu>

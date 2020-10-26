@@ -172,6 +172,6 @@
   "name": "Application Users",
   "layout": "Main",
   "access": [
-    "Everybody"
+    "Authenticated"
   ]
 }

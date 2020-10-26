@@ -4,12 +4,13 @@
 
 @using Radzen
 @using Radzen.Blazor
-@using Blackmail.Models.AzureBlackmail
+@using Blackmail.Models.Blackmailazure
 @using Microsoft.AspNetCore.Identity;
 @using Blackmail.Models
 @using Microsoft.AspNetCore.Authorization
 
 
+<form method="post" action="account/login">
 <RadzenContent Container="main">
   <ChildContent>
     <RadzenHeading Size="H1" Text="Login">
@@ -22,3 +23,4 @@
     </div>
   </ChildContent>
 </RadzenContent>
+</form>

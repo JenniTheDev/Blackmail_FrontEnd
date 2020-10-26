@@ -62,7 +62,7 @@ namespace Blackmail
 
             services.AddDbContext<ApplicationIdentityDbContext>(options =>
             {
-                options.UseMySql(Configuration.GetConnectionString("AzureBlackmailConnection"));
+                options.UseMySql(Configuration.GetConnectionString("blackmailazureConnection"));
             });
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -80,9 +80,9 @@ namespace Blackmail
                 .AddIdentityServerJwt();
 
 
-            services.AddDbContext<Blackmail.Data.AzureBlackmailContext>(options =>
+            services.AddDbContext<Blackmail.Data.BlackmailazureContext>(options =>
             {
-              options.UseMySql(Configuration.GetConnectionString("AzureBlackmailConnection"));
+              options.UseMySql(Configuration.GetConnectionString("blackmailazureConnection"));
             });
 
             services.AddControllersWithViews();
@@ -135,8 +135,7 @@ namespace Blackmail
 
                 var oDataBuilder = new ODataConventionModelBuilder(provider);
 
-                oDataBuilder.EntitySet<Blackmail.Models.AzureBlackmail.Devicecode>("Devicecodes");
-                oDataBuilder.EntitySet<Blackmail.Models.AzureBlackmail.Persistedgrant>("Persistedgrants");
+                oDataBuilder.EntitySet<Blackmail.Models.Blackmailazure.Datum>("Data");
 
                 this.OnConfigureOData(oDataBuilder);
 
@@ -146,7 +145,7 @@ namespace Blackmail
                 oDataBuilder.EntitySet<IdentityRole>("ApplicationRoles");
                 var model = oDataBuilder.GetEdmModel();
 
-                endpoints.MapODataRoute("odata", "odata/AzureBlackmail", model);
+                endpoints.MapODataRoute("odata", "odata/blackmailazure", model);
 
                 endpoints.MapODataRoute("auth", "auth", model);
             });

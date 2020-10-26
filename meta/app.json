@@ -1,6 +1,6 @@
 {
   "dataSources": [
-    "AzureBlackmail"
+    "blackmailazure"
   ],
   "generator": "@radzen/blazor-server",
   "https": true,
@@ -11,51 +11,41 @@
   "logo": "",
   "name": "Blackmail",
   "navigation": [
-    "Add Application Role",
-    "Add Application User",
-    "Login",
-    "Devicecodes",
-    "Home"
+    "Data"
   ],
   "pages": [
-    "Add Blackmailer",
-    "Edit Blackmailer",
+    "Data",
+    "Add Datum",
+    "Edit Datum",
     "Login",
     "Application Users",
     "Application Roles",
-    "Profile",
     "Register Application User",
     "Add Application Role",
     "Add Application User",
     "Edit Application User",
-    "Unauthorized",
-    "User Infos",
-    "Devicecodes",
-    "Add Devicecode",
-    "Edit Devicecode",
-    "Add Persistedgrant",
-    "Edit Persistedgrant",
-    "Home"
+    "Profile",
+    "Unauthorized"
   ],
   "security": {
     "autoGeneratePages": true,
-    "dataSource": "AzureBlackmail",
+    "dataSource": "blackmailazure",
     "duration": 5,
     "emailConfirmation": false,
     "layout": "Main",
     "loginLayout": "Login",
-    "loginPage": "Application Users",
     "provider": "default",
     "smtpFrom": "",
     "smtpPassword": "",
     "smtpSSL": false,
     "smtpServer": "",
-    "smtpUser": ""
+    "smtpUser": "",
+    "loginPage": "Login"
   },
   "serverLang": "cs",
   "serverProject": true,
   "serverVersion": "3",
-  "startPage": "Home",
+  "startPage": "Data",
   "theme": "dark",
   "wasm": true
 }

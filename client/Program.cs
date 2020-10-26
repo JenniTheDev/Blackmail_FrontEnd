@@ -33,7 +33,7 @@ namespace Blackmail
             builder.Services.AddTransient(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Blackmail.ServerAPI"));
             builder.Services.AddApiAuthorization();
 
-            builder.Services.AddScoped<AzureBlackmailService>();
+            builder.Services.AddScoped<BlackmailazureService>();
 
             OnConfigureBuilder(builder);
 

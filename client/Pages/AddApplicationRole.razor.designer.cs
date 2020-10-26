@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
-using Blackmail.Models.AzureBlackmail;
+using Blackmail.Models.Blackmailazure;
 using Microsoft.AspNetCore.Identity;
 using Blackmail.Models;
 using Blackmail.Client.Pages;
@@ -51,7 +51,7 @@ namespace Blackmail.Pages
 
 
         [Inject]
-        protected AzureBlackmailService AzureBlackmail { get; set; }
+        protected BlackmailazureService Blackmailazure { get; set; }
 
         IdentityRole _role;
         protected IdentityRole role
@@ -74,7 +74,15 @@ namespace Blackmail.Pages
 
         protected override async System.Threading.Tasks.Task OnInitializedAsync()
         {
-            await Load();
+            if (!await Security.IsAuthenticatedAsync())
+            {
+                UriHelper.NavigateTo("Login", true);
+            }
+            else
+            {
+                await Load();
+            }
+
         }
         protected async System.Threading.Tasks.Task Load()
         {

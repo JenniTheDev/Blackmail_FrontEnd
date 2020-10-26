@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nYoZQ9VM9iNpYtfCgs2c-Yu8azGwf_07n6bkNSEVQ54=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\h_tnR-aOSqlERBBgrDhS3t-C7rv-Wpqu33KWGkJKHvo=.hash",
       "Source": "C:\\Users\\jenni\\Documents\\FrontEndWeb\\Blackmail_FrontEnd\\client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blackmail.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blackmail.Client.dll.br"
     },
@@ -326,7 +326,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0JBx1EQZcYOW5PD_3h2Cdn5QmMk96tIfMhMBDQ5EGP8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AzzM8ODJq1eir5ITEOw22IOlHp9Ht9Qz1yEEMeJe72s=.hash",
       "Source": "C:\\Users\\jenni\\Documents\\FrontEndWeb\\Blackmail_FrontEnd\\client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blackmail.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blackmail.Client.pdb.br"
     },
@@ -356,7 +356,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CLz3gML34OU1FaL2SQqaGOejgy5p0pshqCHFhznxEzU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jb2wy0cfchODwAl3-KaPjRos5Xk-sdR2wQTwnN2jsyc=.hash",
       "Source": "C:\\Users\\jenni\\Documents\\FrontEndWeb\\Blackmail_FrontEnd\\client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }
