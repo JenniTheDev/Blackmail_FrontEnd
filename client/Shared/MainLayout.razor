@@ -53,6 +53,10 @@
       <ChildContent>
         <RadzenPanelMenuItem Text="Data" Path="data" Visible="@Security.IsInRole(new string[]{"Authenticated"})">
         </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Login" Path="login" Visible="@Security.IsInRole(new string[]{"Everybody"})">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Home" Path="home" Visible="@Security.IsInRole(new string[]{"Everybody"})">
+        </RadzenPanelMenuItem>
       </ChildContent>
     </RadzenPanelMenu>
   </ChildContent>
