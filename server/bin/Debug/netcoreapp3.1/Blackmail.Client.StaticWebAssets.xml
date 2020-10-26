@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\jenni\Documents\FrontEndWeb\Blackmail_FrontEnd\client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\jenni\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\3.2.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\jenni\.nuget\packages\radzen.blazor\2.15.17\build\..\staticwebassets\" />
+</StaticWebAssets>

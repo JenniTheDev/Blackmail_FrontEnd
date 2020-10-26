@@ -1,0 +1,39 @@
+﻿@page "/user-infos"
+@layout MainLayout
+@inherits Blackmail.Pages.UserInfosComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using Blackmail.Models.AzureBlackmail
+@using Microsoft.AspNetCore.Identity;
+@using Blackmail.Models
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenHeading Size="H1" Text="User Infos">
+    </RadzenHeading>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenTextBox Placeholder="Search ..." style="display: block; margin-bottom: 10px; width: 100%" Name="Textbox0" @oninput="@(async(args) => {search = $"{args.Value}";await grid0.Reload();})">
+        </RadzenTextBox>
+        <RadzenGrid @ref="grid0" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" TItem="Blackmail.Models.Mssql.UserInfo">
+          <Columns>
+            <RadzenGridColumn TItem="Blackmail.Models.Mssql.UserInfo" Property="ID" Title="ID">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Blackmail.Models.Mssql.UserInfo" Property="BlackmailerName" Title="Blackmailer Name">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Blackmail.Models.Mssql.UserInfo" Property="BlackmaileeName" Title="Blackmail Ee Name">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Blackmail.Models.Mssql.UserInfo" Property="Cost" Title="Cost">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Blackmail.Models.Mssql.UserInfo" Property="img" Title="Img">
+            </RadzenGridColumn>
+          </Columns>
+        </RadzenGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

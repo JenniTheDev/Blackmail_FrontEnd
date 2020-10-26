@@ -1,0 +1,95 @@
+{
+  "components": [
+    {
+      "type": "content",
+      "container": "main",
+      "components": [
+        {
+          "type": "heading",
+          "name": "pageTitle",
+          "size": "H1",
+          "text": "User Infos"
+        },
+        {
+          "type": "row",
+          "components": [
+            {
+              "type": "col",
+              "class": "col-md-12",
+              "components": [
+                {
+                  "attributes": [
+                    {
+                      "name": "@oninput",
+                      "value": "@(async(args) => {search = $\"{args.Value}\";await grid0.Reload();})"
+                    }
+                  ],
+                  "name": "textbox0",
+                  "placeholder": "Search ...",
+                  "style": {
+                    "display": "block",
+                    "marginBottom": "10px",
+                    "width": "100%"
+                  },
+                  "type": "textbox",
+                  "value": ""
+                },
+                {
+                  "name": "grid0",
+                  "allowFiltering": true,
+                  "filterMode": "advanced",
+                  "allowPaging": true,
+                  "allowSorting": true,
+                  "events": {
+                    "loadData": []
+                  },
+                  "title": "",
+                  "columns": [
+                    {
+                      "property": "ID",
+                      "title": "ID"
+                    },
+                    {
+                      "property": "BlackmailerName",
+                      "title": "Blackmailer Name"
+                    },
+                    {
+                      "property": "BlackmaileeName",
+                      "title": "Blackmail Ee Name"
+                    },
+                    {
+                      "property": "Cost",
+                      "title": "Cost"
+                    },
+                    {
+                      "property": "img",
+                      "title": "Img"
+                    }
+                  ],
+                  "type": "grid",
+                  "itemType": "Blackmail.Models.Mssql.UserInfo"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": {
+    "load": [
+      {
+        "condition": "string.IsNullOrEmpty(search)",
+        "name": "search",
+        "type": "set",
+        "value": "\"\"",
+        "valueType": "string"
+      }
+    ]
+  },
+  "name": "User Infos",
+  "access": [
+    "Authenticated"
+  ],
+  "layout": "Main"
+}
