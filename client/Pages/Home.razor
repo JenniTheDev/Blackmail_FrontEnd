@@ -8,7 +8,8 @@
 @using Blackmail.Models.Blackmailazure
 @using Microsoft.AspNetCore.Identity;
 @using Blackmail.Models
-@using Microsoft.AspNetCore.Authorization
+
+
 
 
 <RadzenContent Container="main">
@@ -27,14 +28,10 @@
                 </RadzenImage>
             </div>
         </div>
-        <div class="row justify-content-center" style="height: 71px">
-            <div class="col-md-12  d-flex justify-content-around" style="position: relative; text-align: center">
-                
-                    foreach(var img in datum) {
-                        <img class= "img-responsive" src"@Url.Content(@datum.img)" alt="" style= "width:200px; height: 200px" />
-                    }
-                
-            </div>
-        </div>
+
+       
+
     </ChildContent>
 </RadzenContent>
+
+

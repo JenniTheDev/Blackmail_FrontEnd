@@ -17,15 +17,15 @@ namespace Blackmail.Models.Blackmailazure {
             get;
             set;
         }
-        public string email {
+        public string Email {
             get;
             set;
         }
-        public string password {
+        public string Password {
             get;
             set;
         }
-        public bool admin {
+        public bool Admin {
             get;
             set;
         }
