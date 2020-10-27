@@ -23,7 +23,7 @@
                     "login": [],
                     "register": [
                       {
-                        "path": "register-application-user",
+                        "path": "register-user",
                         "type": "popup"
                       }
                     ]
@@ -55,5 +55,5 @@
     ]
   },
   "name": "Login",
-  "layout": "Login"
+  "layout": "Main"
 }

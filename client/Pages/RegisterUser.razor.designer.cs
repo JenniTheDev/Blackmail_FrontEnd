@@ -14,7 +14,7 @@ using Blackmail.Client.Pages;
 
 namespace Blackmail.Pages
 {
-    public partial class Login2Component : ComponentBase
+    public partial class RegisterUserComponent : ComponentBase
     {
         [Parameter(CaptureUnmatchedValues = true)]
         public IReadOnlyDictionary<string, dynamic> Attributes { get; set; }
@@ -52,5 +52,45 @@ namespace Blackmail.Pages
 
         [Inject]
         protected BlackmailazureService Blackmailazure { get; set; }
+
+        ApplicationUser _user;
+        protected ApplicationUser user
+        {
+            get
+            {
+                return _user;
+            }
+            set
+            {
+                if (!object.Equals(_user, value))
+                {
+                    var args = new PropertyChangedEventArgs(){ Name = "user", NewValue = value, OldValue = _user };
+                    _user = value;
+                    OnPropertyChanged(args);
+                    Reload();
+                }
+            }
+        }
+
+        protected override async System.Threading.Tasks.Task OnInitializedAsync()
+        {
+            await Load();
+        }
+        protected async System.Threading.Tasks.Task Load()
+        {
+            user = new ApplicationUser();;
+        }
+
+        protected async System.Threading.Tasks.Task Form0Submit(ApplicationUser args)
+        {
+            DialogService.Close();
+            await JSRuntime.InvokeAsync<string>("window.history.back");
+        }
+
+        protected async System.Threading.Tasks.Task Button2Click(MouseEventArgs args)
+        {
+            DialogService.Close();
+            await JSRuntime.InvokeAsync<string>("window.history.back");
+        }
     }
 }

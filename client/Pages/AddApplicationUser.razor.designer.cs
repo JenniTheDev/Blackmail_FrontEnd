@@ -93,15 +93,7 @@ namespace Blackmail.Pages
 
         protected override async System.Threading.Tasks.Task OnInitializedAsync()
         {
-            if (!await Security.IsAuthenticatedAsync())
-            {
-                UriHelper.NavigateTo("Login", true);
-            }
-            else
-            {
-                await Load();
-            }
-
+            await Load();
         }
         protected async System.Threading.Tasks.Task Load()
         {

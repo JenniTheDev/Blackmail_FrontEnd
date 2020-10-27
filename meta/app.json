@@ -19,9 +19,10 @@
     "Login",
     "Add Application Role",
     "Add Application User",
-    "Register Application User",
-    "Login2",
-    "Home"
+    "Register User",
+    "Home",
+    "Create Blackmail",
+    "Edit Application User"
   ],
   "pages": [
     "Data",
@@ -30,14 +31,16 @@
     "Login",
     "Application Users",
     "Application Roles",
-    "Register Application User",
+    "Register User",
     "Add Application Role",
     "Add Application User",
     "Edit Application User",
-    "Profile",
+    "Change Password",
     "Unauthorized",
     "Home",
-    "Login2"
+    "Create Blackmail",
+    "Register Application User",
+    "Profile"
   ],
   "port": 8000,
   "security": {
@@ -46,7 +49,7 @@
     "duration": 5,
     "emailConfirmation": false,
     "layout": "Main",
-    "loginLayout": "Login",
+    "loginLayout": "Main",
     "loginPage": "Login",
     "provider": "default",
     "smtpFrom": "",

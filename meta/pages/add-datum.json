@@ -302,9 +302,8 @@
     ]
   },
   "name": "Add Datum",
-  "layout": "Main",
   "access": [
-    "Authenticated",
-    "admin"
-  ]
+    "Authenticated"
+  ],
+  "layout": "Main"
 }

@@ -7,7 +7,7 @@ using Radzen.Blazor;
 
 namespace Blackmail.Pages
 {
-    public partial class Login2Component
+    public partial class CreateBlackmailComponent
     {
 
     }

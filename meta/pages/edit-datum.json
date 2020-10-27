@@ -319,8 +319,8 @@
     ]
   },
   "name": "Edit Datum",
-  "layout": "Main",
   "access": [
     "Authenticated"
-  ]
+  ],
+  "layout": "Main"
 }

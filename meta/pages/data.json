@@ -45,23 +45,6 @@
                   }
                 },
                 {
-                  "attributes": [
-                    {
-                      "name": "@oninput",
-                      "value": "@(async(args) => {search = $\"{args.Value}\";await grid0.Reload();})"
-                    }
-                  ],
-                  "name": "textbox0",
-                  "placeholder": "Search ...",
-                  "style": {
-                    "display": "block",
-                    "marginBottom": "10px",
-                    "width": "100%"
-                  },
-                  "type": "textbox",
-                  "value": ""
-                },
-                {
                   "name": "grid0",
                   "allowFiltering": true,
                   "filterMode": "advanced",
@@ -87,35 +70,7 @@
                           },
                           {
                             "name": "$filter",
-                            "value": [
-                              {
-                                "filters": [
-                                  {
-                                    "operation": "contains",
-                                    "property": "Blackmailer",
-                                    "type": "string",
-                                    "value": "\"${search}\""
-                                  },
-                                  {
-                                    "operation": "contains",
-                                    "property": "Blackmailee",
-                                    "type": "string",
-                                    "value": "\"${search}\""
-                                  },
-                                  {
-                                    "operation": "contains",
-                                    "property": "img",
-                                    "type": "string",
-                                    "value": "\"${search}\""
-                                  }
-                                ],
-                                "operator": "or"
-                              },
-                              {
-                                "value": "${(string.IsNullOrEmpty(event.filter)? \"true\" : event.filter)}"
-                              }
-                            ],
-                            "operator": "and"
+                            "value": "${event.filter}"
                           },
                           {
                             "name": "$orderby",
@@ -257,19 +212,11 @@
     }
   ],
   "events": {
-    "load": [
-      {
-        "condition": "string.IsNullOrEmpty(search)",
-        "name": "search",
-        "type": "set",
-        "value": "\"\"",
-        "valueType": "string"
-      }
-    ]
+    "load": []
   },
   "name": "Data",
-  "layout": "Main",
   "access": [
     "Authenticated"
-  ]
+  ],
+  "layout": "Main"
 }

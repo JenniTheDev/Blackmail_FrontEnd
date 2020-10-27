@@ -13,7 +13,6 @@ using Blackmail.Models;
 
 namespace Blackmail.Controllers
 {
-    [Authorize]
     [ODataRoutePrefix("auth/ApplicationRoles")]
     public partial class ApplicationRolesController : ODataController
     {

@@ -54,25 +54,6 @@ namespace Blackmail.Pages
         protected BlackmailazureService Blackmailazure { get; set; }
         protected RadzenGrid<Blackmail.Models.Blackmailazure.Datum> grid0;
 
-        string _search;
-        protected string search
-        {
-            get
-            {
-                return _search;
-            }
-            set
-            {
-                if (!object.Equals(_search, value))
-                {
-                    var args = new PropertyChangedEventArgs(){ Name = "search", NewValue = value, OldValue = _search };
-                    _search = value;
-                    OnPropertyChanged(args);
-                    Reload();
-                }
-            }
-        }
-
         IEnumerable<Blackmail.Models.Blackmailazure.Datum> _getDataResult;
         protected IEnumerable<Blackmail.Models.Blackmailazure.Datum> getDataResult
         {
@@ -125,9 +106,7 @@ namespace Blackmail.Pages
         }
         protected async System.Threading.Tasks.Task Load()
         {
-            if (string.IsNullOrEmpty(search)) {
-                search = "";
-            }
+
         }
 
         protected async System.Threading.Tasks.Task Button0Click(MouseEventArgs args)
@@ -142,7 +121,7 @@ namespace Blackmail.Pages
         {
             try
             {
-                var blackmailazureGetDataResult = await Blackmailazure.GetData(filter:$@"(contains(Blackmailer,""{search}"") or contains(Blackmailee,""{search}"") or contains(img,""{search}"")) and {(string.IsNullOrEmpty(args.Filter)? "true" : args.Filter)}", orderby:$"{args.OrderBy}", top:args.Top, skip:args.Skip, count:args.Top != null && args.Skip != null);
+                var blackmailazureGetDataResult = await Blackmailazure.GetData(filter:$"{args.Filter}", orderby:$"{args.OrderBy}", top:args.Top, skip:args.Skip, count:args.Top != null && args.Skip != null);
                 getDataResult = blackmailazureGetDataResult.Value.AsODataEnumerable();
 
                 getDataCount = blackmailazureGetDataResult.Count;

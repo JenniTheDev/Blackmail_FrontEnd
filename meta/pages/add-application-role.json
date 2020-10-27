@@ -1,7 +1,6 @@
 {
   "access": [
-    "Authenticated",
-    "admin"
+    "Everybody"
   ],
   "components": [
     {

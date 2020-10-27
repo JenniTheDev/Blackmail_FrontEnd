@@ -42,16 +42,14 @@
               "components": [
                 {
                   "events": {
-                    "click": [
-                      {
-                        "path": "edit-datum",
-                        "type": "navigate"
-                      }
-                    ]
+                    "MouseEnter": [],
+                    "click": []
                   },
                   "name": "image2",
                   "path": "https://i.imgur.com/qNas47U.png",
                   "style": {
+                    "borderBottom": "1px solid #3a474d",
+                    "borderRadius": "4px",
                     "display": "flex",
                     "height": "41.296875px",
                     "position": "relative",
@@ -64,21 +62,17 @@
                 {
                   "attributes": [],
                   "events": {
-                    "click": [
-                      {
-                        "path": "add-datum",
-                        "type": "navigate"
-                      }
-                    ]
+                    "MouseEnter": [],
+                    "click": []
                   },
                   "name": "image1",
                   "path": "https://i.imgur.com/Rue8hta.png",
                   "style": {
                     "display": "flex",
-                    "height": "38.21875px",
+                    "height": "43.21875px",
                     "position": "relative",
                     "textAlign": "right",
-                    "width": "346px"
+                    "width": "347px"
                   },
                   "type": "image"
                 }

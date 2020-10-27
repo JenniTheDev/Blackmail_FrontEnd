@@ -52,15 +52,5 @@ namespace Blackmail.Pages
 
         [Inject]
         protected BlackmailazureService Blackmailazure { get; set; }
-
-        protected async System.Threading.Tasks.Task Image2Click(dynamic args)
-        {
-            UriHelper.NavigateTo("edit-datum");
-        }
-
-        protected async System.Threading.Tasks.Task Image1Click(dynamic args)
-        {
-            UriHelper.NavigateTo("add-datum");
-        }
     }
 }

@@ -69,7 +69,7 @@ namespace Blackmail.Pages
 
         protected async System.Threading.Tasks.Task Login0Register()
         {
-            DialogService.Open<RegisterApplicationUser>("Register Application User", null);
+            DialogService.Open<RegisterUser>("Register User", null);
         }
     }
 }

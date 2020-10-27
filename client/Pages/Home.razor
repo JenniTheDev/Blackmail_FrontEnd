@@ -12,20 +12,29 @@
 
 
 <RadzenContent Container="main">
-  <ChildContent>
-    <div style="height: 118px; text-align: center" class="row">
-      <div class="col-md-12" style="text-align: center">
-        <RadzenImage Path="https://i.imgur.com/WhWoRso.png" style="text-align: center; width: 618px">
-        </RadzenImage>
-      </div>
-    </div>
-    <div class="row justify-content-center" style="height: 71px">
-      <div class="col-md-12  d-flex justify-content-around" style="position: relative; text-align: center">
-        <RadzenImage Path="https://i.imgur.com/qNas47U.png" style="display: flex; height: 41.296875px; position: relative; text-align: left; vertical-align: middle; width: 340px" Click="@Image2Click">
-        </RadzenImage>
-        <RadzenImage Path="https://i.imgur.com/Rue8hta.png" style="display: flex; height: 38.21875px; position: relative; text-align: right; width: 346px" Click="@Image1Click">
-        </RadzenImage>
-      </div>
-    </div>
-  </ChildContent>
+    <ChildContent>
+        <div style="height: 118px; text-align: center" class="row">
+            <div class="col-md-12" style="text-align: center">
+                <RadzenImage Path="https://i.imgur.com/WhWoRso.png" style="text-align: center; width: 618px">
+                </RadzenImage>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="height: 71px">
+            <div class="col-md-12  d-flex justify-content-around" style="position: relative; text-align: center">
+                <RadzenImage Path="https://i.imgur.com/qNas47U.png" style="border-bottom: 1px solid #3a474d; border-radius: 4px; display: flex; height: 41.296875px; position: relative; text-align: left; vertical-align: middle; width: 340px">
+                </RadzenImage>
+                <RadzenImage Path="https://i.imgur.com/Rue8hta.png" style="display: flex; height: 43.21875px; position: relative; text-align: right; width: 347px">
+                </RadzenImage>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="height: 71px">
+            <div class="col-md-12  d-flex justify-content-around" style="position: relative; text-align: center">
+                
+                    foreach(var img in datum) {
+                        <img class= "img-responsive" src"@Url.Content(@datum.img)" alt="" style= "width:200px; height: 200px" />
+                    }
+                
+            </div>
+        </div>
+    </ChildContent>
 </RadzenContent>
