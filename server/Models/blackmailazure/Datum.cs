@@ -8,6 +8,11 @@ namespace Blackmail.Models.Blackmailazure {
     [Table("data")]
     public partial class Datum {
         [Key]
+        public int UserID {
+            get;
+            set;
+        }
+
         public string UserName {
             get;
             set;
